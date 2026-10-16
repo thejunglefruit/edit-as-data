@@ -1,0 +1,3 @@
+numpy>=1.24   # beat measurement only
+pytest>=7     # tests only
+# plus ffmpeg and ffprobe in the PATH (ffmpeg 6 or newer; libx264, libfreetype for titles)

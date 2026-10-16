@@ -1,0 +1,36 @@
+{
+  "name": "example",
+  "fps": 25,
+  "width": 1280,
+  "height": 720,
+  "music": {
+    "path": "media/click_125bpm.wav",
+    "bpm": 125,
+    "beats_per_bar": 4,
+    "first_downbeat_s": 0.5,
+    "offset_s": 0.5
+  },
+  "sources": {
+    "bars":     {"path": "media/bars.mp4"},
+    "fractal":  {"path": "media/fractal.mp4"},
+    "portrait": {"path": "media/portrait.mp4"},
+    "film24":   {"path": "media/film24.mp4"}
+  },
+  "shots": [
+    {"src": "bars",     "in_s": 1.0, "bars": 1, "note": "opens on the downbeat"},
+    {"src": "fractal",  "in_s": 0.0, "beats": 2},
+    {"src": "portrait", "in_s": 2.0, "beats": 2, "fit": "blur", "note": "vertical shown whole"},
+    {"src": "film24",   "in_s": 0.5, "bars": 1, "speed_pct": 50, "note": "24 fps source at half speed"},
+    {"gap": true, "beats": 1},
+    {"src": "bars",     "in_s": 4.0, "to_bar": 5, "note": "ends exactly where bar 5 starts"}
+  ],
+  "sfx": [
+    {"path": "media/whoosh.wav", "at_bar": 3, "gain_db": -6, "note": "whoosh into bar 3"}
+  ],
+  "titles": [
+    {"text": "edit-as-data", "font": "fonts/Merriweather-Bold.ttf", "at_bar": 1, "bars": 1, "size": 72}
+  ],
+  "markers": {"0": "bar 1", "96": "bar 3"},
+  "video": {"fade_out_s": 0.4},
+  "audio": {"fade_out_s": 0.4}
+}
