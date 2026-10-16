@@ -11,8 +11,8 @@ import pytest
 
 from conftest import needs_ffmpeg
 
-EVENT = re.compile(r"^(\d{3})  (\S+)\s+V\s+C\s+(\d\d:\d\d:\d\d:\d\d) (\d\d:\d\d:\d\d:\d\d) "
-                   r"(\d\d:\d\d:\d\d:\d\d) (\d\d:\d\d:\d\d:\d\d)$")
+TC = "([0-9]{2}:[0-9]{2}:[0-9]{2}:[0-9]{2})"
+EVENT = re.compile(r"^([0-9]{3})  (\S+)\s+V\s+C\s+" + " ".join([TC] * 4) + "$")
 
 
 def frames(tc, fps=25):
