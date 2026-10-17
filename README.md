@@ -120,8 +120,4 @@ python -m pytest
 
 Made by a motion and creative technologist working with AI agents. The engine came out of editing a showreel this way: an agent wrote and revised the `edit.json`, the tests caught what it got wrong, and the timeline went to Premiere for the final touches.
 
----
-
-**En español:** un motor para escribir el montaje como datos. Un `edit.json` describe cada plano en fotogramas, segundos, pulsos o compases contra la música (la rejilla se puede medir de la propia pista), y se convierte en un mp4 renderizado con ffmpeg, un XML de FCP7 que Premiere y Resolve abren, un EDL CMX3600 y una lista de planos. Las pruebas generan su propio ejemplo sintético y lo miden.
-
 Licence: GPL-3.0-or-later (see `LICENSE`) · font in `examples/fonts` under OFL 1.1
