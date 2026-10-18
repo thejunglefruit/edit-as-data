@@ -112,9 +112,9 @@ python -m pytest
 - `amix` divides by the number of inputs unless `normalize=0`: every sound effect would duck the music.
 - Autocorrelation alone gives the tempo to the nearest analysis hop (11.6 ms), which drifts a frame within a minute. Fitting a line through the onset peaks fixes it.
 
-## Built with AI-assisted workflows
+## About
 
-Made by a motion and creative technologist working with AI agents. The engine came out of editing a showreel this way: an agent wrote and revised the `edit.json`, the tests caught what it got wrong, and the timeline went to Premiere for the final touches.
+Made by The Jungle Fruit, a motion and creative technologist. The engine came out of editing a real showreel: the cut lived in `edit.json`, the tests caught what was wrong, and the timeline went to Premiere for the final touches.
 
 Licence: GPL-3.0-or-later (see `LICENSE`) · font in `examples/fonts` under OFL 1.1
 
