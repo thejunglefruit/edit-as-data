@@ -117,3 +117,5 @@ python -m pytest
 Made by a motion and creative technologist working with AI agents. The engine came out of editing a showreel this way: an agent wrote and revised the `edit.json`, the tests caught what it got wrong, and the timeline went to Premiere for the final touches.
 
 Licence: GPL-3.0-or-later (see `LICENSE`) · font in `examples/fonts` under OFL 1.1
+
+**Commercial licence.** If you want to use it in a closed product without the GPL obligations, a commercial licence is available: thejunglefruit@proton.me
